@@ -17,5 +17,11 @@ NOTES: 		use stdarg.h header.
 
 int variableArguments(int arg_count, ...)
 {
-	return 0;
+	int i, count = 0;
+	va_list nums;			             //Macro To Create Variable List
+	va_start(nums, arg_count);			//Macro to Find The First Argument
+	for (i = 0; i < arg_count;i++)
+	if (va_arg(nums,int)> 90)			//Macro to get each argument
+		count++;
+	return count;
 }

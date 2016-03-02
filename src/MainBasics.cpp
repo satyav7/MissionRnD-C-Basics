@@ -28,7 +28,7 @@ int main(){
 	
 	//Test Count file
 	
-	int countTemp = count(5, 20);
+	int countTemp = count(5,20);
 	printf("%d\n", countTemp);
 
 
